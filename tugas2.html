@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function segitiga(n)
+        {
+            var i = 2;
+            var dump = Array();
+
+            do
+            {
+                var a = 0;
+                for(var j = 1; j <= i; j++)
+                {
+                    if(i % j == 0)
+                    {
+                        a++;
+                    }
+                }
+
+                if(a == 2)
+                {
+                    dump.push(i);
+                }
+                i++;
+            } while(dump.length < n);
+
+            for(var i = 0; i < dump.length; i++)
+            {
+                for(var j = 0; j <= i; j++)
+                {
+                    document.write(dump[j]);
+                }
+                document.write("<br>");
+            }
+        }
+
+        segitiga(7);
+    </script>
+</body>
+</html>
