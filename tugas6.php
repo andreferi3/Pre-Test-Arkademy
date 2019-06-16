@@ -1,4 +1,20 @@
 <?php
+    // filename tugas6
+    // author andreferi
+
+    /*
+        PERTANYAAN :
+
+        Kategori: Advanced
+
+        Decimal to Binary
+        
+        Ketentuan Program :
+            1. User menginput angka desimal
+            2. Output berupa angka biner dari angka desimal tersebut
+            3. Program ini hanya boleh menggunakan fungsi IF, SWITCH, FOR, WHILE
+
+    */
     function convert($n) {
         $biner = "";
 

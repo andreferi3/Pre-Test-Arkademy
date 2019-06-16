@@ -7,7 +7,34 @@
     <title>Document</title>
 </head>
 <body>
+    <label for="string">Masukkan Kalimat</label>
+    <input type="text" name="string" id="string">
+
+    <label for="cari">Kata yang mau dicari</label>
+    <input type="text" name="cari" id="cari">
     <script>
+        // filename tugas5
+        // author andreferi
+
+        /*
+            PERTANYAAN :
+            
+            Kategori: Advanced
+
+            Palindrome
+            
+            Buatlah program yang dapat menemukan berapa banyak sebuah kata/frasa dari sebuah string baik itu dari kiri atau kanan.
+
+            REQUIREMENT:
+            1. Input dari user sebanyak 2 kali berupa string dan kata/frasa yang ingin dicari.
+            2. Input kata/frasa pencarian tidak bisa lebih panjang dibandingkan string.
+            3. Output berupa banyaknya kata/frasa pencarian yang ditemukan dari string yang telah diberikan.
+
+            INPUT:
+
+            $ banananana
+            $ nana
+        */
         function hitungKata(input, cari) {
             var inp = input;
             var cari = cari;
@@ -37,7 +64,7 @@
                 alert('gagal');
             }
 
-            return temu;
+            return nemu;
         }
 
         document.write(hitungKata("banananana", "nana"));
